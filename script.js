@@ -48,6 +48,7 @@ for (let i = 1; i <= numberOfInputs; i++) {
     const input = document.createElement("input");
     input.className = "code";
     input.maxLength = 1;
+	input.id = `code-${i}`
 
     input.addEventListener("input", onInput);
     input.addEventListener("keyup", onKeyUp);
